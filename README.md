@@ -11,7 +11,7 @@
 Simply download the repo and open index.html
 
 ## Play it now!
-* [Play](https://promahmoud.github.io/ArcadeGame/)
+* [Play](https://promahmoud.github.io/Arcade-Game)
 
 ## Tools Used:
 * HTML
