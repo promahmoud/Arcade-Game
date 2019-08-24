@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arcade Game</title>
+    <link rel="icon" href="./images/icons/gem-green.png">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg">
+    <!-- Navbar -->
+    <nav id="menu">
+        <div class="content">
+            <div class="front"></div>
+            <div class="back bg" id="scroll">
+                <a href="#" class="close" id="btn">
+                    <img src="./images/icons/Close.png" alt="">
+                </a>
+                <h3 class="head">Settings</h3>
+                <div class="toggle-container">
+                    <div class="theme">
+                        <span>theme :</span>
+                        <input type="checkbox" id="switch-theme" name="theme"><label for="switch-theme">Toggle</label>
+                    </div>
+                    <div class="sound">
+                        <span>sound :</span>
+                        <input type="checkbox" id="switch-audio" name="theme"><label for="switch-audio">Toggle</label>
+                    </div>
+                </div>
+                <h3>Items</h3>
+                <ul class="items">
+                    <li>
+                        <img src="./images/icons/heart.png" alt="heart">
+                        <p>Gives you one more life.</p>
+                    </li>
+                    <li>
+                        <img src="./images/icons/star.png" alt="star">
+                        <p>Makes you indestructible for 1 second.</p>
+                    </li>
+                    <li>
+                        <img src="./images/icons/key.png" alt="Key">
+                        <p> Unlocks immediately the next level.</p>
+                    </li>
+                    <li>
+                        <img src="./images/icons/rock.png" alt="rock">
+                        <p> Turns water in stone for 1 second.</p>
+                    </li>
+                    <li>
+                        <img src="./images/icons/gem-blue.png" alt="Gem blue">
+                        <p>Slows down the bugs for 1 second.</p>
+                    </li>
+                    <li>
+                        <img src="./images/icons/gem-green.png" alt="Gem green">
+                        <p> Freezes the bugs for 1 second.</p>
+                    </li>
+                </ul>
+                <h3>Controls</h3>
+                <ul class="controls">
+                    <li><img src="images/icons/up-arrow.svg" class="control"> Move the player up.</li>
+                    <li><img src="images/icons/down-arrow.svg" class="control"> Move the player dwon.</li>
+                    <li><img src="images/icons/left-arrow.svg" class="control"> Move the player to left.</li>
+                    <li><img src="images/icons/right-arrow.svg" class="control"> Move the player to right.</li>
+                    <li><img src="images/icons/keyboard-key-enter.svg" class="control"> Select a player.</li>
+                    <li><img src="images/icons/h.svg" class="control"> Redeem 1 life against an item.</li>
+                    <li><img src="images/icons/p.svg" class="control"> Pause/Resume the game.</li>
+                    <li><img src="images/icons/q.svg" class="control"> Quit and show the player selection screen.</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container bg" id="scroll">
+        <div class="containerOverlay">
+            <a href="#"></a>
+        </div>
+        <a href="#menu" class="open-menu">
+            <img src="./images/icons/menu.svg" alt="menu">
+        </a>
+        <section class="game">
+            <article id="info_score">
+                <p>LIVES : <span class="lives"></span>
+                    <img src="./images/icons/heart.png" alt="heart">
+                </p>
+
+                <p>LEVEL : <span class="level">1</span>
+                    <img src="./images/icons/award.png" alt="award">
+                </p>
+            </article>
+            <article id="select-player">
+                <h2>choose your preferred player</h2>
+                <hr>
+            </article>
+            <article id="game-area"></article>
+
+            <article id="play-game">
+                <button id="play" type="button">play</button>
+            </article>
+
+            <!-- audio -->
+            <audio class="start-game-audio" loop >
+                <source src="./audio/bgm.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio class="won-game-audio">
+                <source src="./audio/won.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio class="lost-game-audio">
+                <source src="./audio/lost.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+    </div>
+    <!--End container-->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+
+</html>
