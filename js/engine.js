@@ -239,7 +239,7 @@ var Engine = (function (global) {
             Swal.fire({
                 title: 'Game Over!',
                 text: 'Try Again :)',
-                imageUrl: '../images/feeling_sad.svg',
+                imageUrl: './images/feeling_sad.svg',
                 imageWidth: 400,
                 imageHeight: 200,
                 imageAlt: 'Custom image',
@@ -285,7 +285,7 @@ var Engine = (function (global) {
             Swal.fire({
                 title: 'Great💥🏆🏅',
                 text: `You've finished the game 💪👏`,
-                imageUrl: '../images/superhero.svg',
+                imageUrl: './images/superhero.svg',
                 imageWidth: 400,
                 imageHeight: 200,
                 imageAlt: 'Custom image',
