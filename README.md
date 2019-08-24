@@ -11,7 +11,7 @@
 Simply download the repo and open index.html
 
 ## Play it now!
-* [Play](https://sweetalert2.github.io/)
+* [Play](https://promahmoud.github.io/ArcadeGame/)
 
 ## Tools Used:
 * HTML
