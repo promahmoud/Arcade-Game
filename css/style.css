@@ -232,8 +232,8 @@ label:active:after {
 }
 #menu .items li {
 	display: flex;
-/* 	margin-bottom: 10px; */
-/* 	align-items: center; */
+	margin-bottom: 10px;
+	align-items: center;
 
 }
 
