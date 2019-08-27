@@ -228,10 +228,10 @@ label:active:after {
 }
 #menu .items {
 	text-align: left;
+	margin-left: 23px;
 }
 #menu .items li {
 	display: flex;
-	padding: 0px 20px;
 	margin-bottom: 15px;
 
 }
