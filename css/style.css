@@ -226,7 +226,9 @@ label:active:after {
 	margin-top: 30px;
 	margin-left: 4px;
 }
-
+#menu .items {
+	text-align: left;
+}
 #menu .items li {
 	display: flex;
 	padding: 0px 20px;
@@ -394,15 +396,34 @@ audio {
 /* Responsive */
 @media (max-width:250px){
 	.back{
-		font-size: 12px;
+		font-size: 9px;
+	}
+	.open-menu img{
+		width: 35px;
+	}
+	#info_score {
+		margin-top: 58%;
 	}
 }
 @media (max-width:600px){
 	#menu{
 		width: 100%;
 	}
+	.back{
+		font-size: 12px;
+	}
 	#menu .items li p{
 		text-indent: 5px;
+	}
+	#info_score {
+		margin-top: 30%;
+	}
+	#info_score p {
+		margin-bottom: 27px;
+		font-size: 7px;
+	}
+	#info_score p img {
+		width: 7px;
 	}
 	#select-player {
 		width: 100%;
