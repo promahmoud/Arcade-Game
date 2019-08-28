@@ -75,7 +75,8 @@ var Engine = (function (global) {
         restart();
         lastTime = Date.now();
         main();
-        audio_start_game.play();
+        window.onload = function () { audio_start_game.play(); }
+//         audio_start_game.play();
         audio_start_game.currentTime = 0;
     }
 
