@@ -75,12 +75,11 @@ var Engine = (function (global) {
         restart();
         lastTime = Date.now();
         main();
-        window.onload = function () {
-            var context = new AudioContext();
-            audio_start_game.play();
-        }
+        
+        var context = new AudioContext();
+        audio_start_game.play();
 
-        window.addEventListener('click', function () {
+        window.addEventListener('load', function () {
             context.resume().then(() => {
                 console.log('Playback resumed successfully');
             });
