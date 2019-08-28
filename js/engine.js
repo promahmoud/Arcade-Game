@@ -75,12 +75,16 @@ var Engine = (function (global) {
         restart();
         lastTime = Date.now();
         main();
-        const playPromise = audio_start_game.play();
-        if (playPromise !== null) {
-            playPromise.catch(() => {
-                audio_start_game.play();
-            });
+        window.onload = function () {
+            var context = new AudioContext();
+            audio_start_game.play();
         }
+
+        window.addEventListener('click', function () {
+            context.resume().then(() => {
+                console.log('Playback resumed successfully');
+            });
+        });
 //         audio_start_game.play();
         audio_start_game.currentTime = 0;
     }
