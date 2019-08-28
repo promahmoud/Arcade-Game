@@ -76,18 +76,8 @@ var Engine = (function (global) {
         lastTime = Date.now();
         main();
         
-//         var context = new AudioContext();
-        window.onload = function () {
-            var context = new AudioContext();
-            audio_start_game.play();
-        }
-        
-        window.addEventListener('click', function () {
-            context.resume().then(() => {
-                console.log('Playback resumed successfully');
-            });
-        });
-//         audio_start_game.play();
+        audio_start_game.play();
+        audio_start_game.muted= false;
         audio_start_game.currentTime = 0;
     }
 
