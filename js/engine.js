@@ -75,7 +75,12 @@ var Engine = (function (global) {
         restart();
         lastTime = Date.now();
         main();
-        window.onload = function () { audio_start_game.play(); }
+        const playPromise = audio_start_game.play();
+        if (playPromise !== null) {
+            playPromise.catch(() => {
+                audio_start_game.play();
+            });
+        }
 //         audio_start_game.play();
         audio_start_game.currentTime = 0;
     }
